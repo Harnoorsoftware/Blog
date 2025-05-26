@@ -13,7 +13,7 @@ The train to Munich cut through the storm like a blade, the windows rattling wit
 """)
 
 # Image in between
-st.image("img.png", caption="The man in the dark suit", use_column_width=True)
+st.image("img.png", caption="The man in the dark suit", use_container_width=True)
 
 # Continue the blog
 st.markdown("""
