@@ -1,19 +1,80 @@
 import streamlit as st
-import base64
 
-# Set page title
-st.set_page_config(page_title="My HTML Page")
+# Page configuration
+st.set_page_config(page_title="Harnoor's Blog")
 
-# Read and encode the image as base64
-with open("img.png", "rb") as image_file:
-    base64_image = base64.b64encode(image_file.read()).decode("utf-8")
+# Title & Subtitle
+st.markdown("""
+# Hi! I am Harnoor.
+## Welcome to my *First Blog.*
+### **The Last Passenger**
+""")
 
-# Load the HTML file
-with open("index.html", "r", encoding="utf-8") as f:
-    html_content = f.read()
+# Blog Content Part 1
+st.markdown("""
+The train to Munich cut through the storm like a blade, the windows rattling with every gust.  
+I wrapped my coat tighter, glancing around the nearly empty carriage.  
+Only one other passenger sat at the far end—a man in a dark suit, briefcase in hand, eyes locked on me.
 
-# Replace placeholder in HTML with base64 image
-html_content = html_content.replace("{{IMAGE_DATA}}", base64_image)
+I wasn’t supposed to be on this train. My original had been canceled, and this one, they said, was a “special service.”  
+No stops. No questions. Something about the way the conductor said it made my skin crawl.
 
-# Display the HTML in Streamlit
-st.components.v1.html(html_content, height=800, scrolling=True)
+The man stood. Slowly. Calmly. His gaze never left mine as he walked toward me, step by deliberate step.  
+I stood too, instincts screaming.
+
+**“You switched tickets,”** he said. His voice was smooth, almost bored.  
+**“That seat wasn’t meant for you.”**
+
+My throat went dry.  
+**“What do you mean?”**
+
+He opened his coat and flashed a badge. *Interpol*.
+""")
+
+# Insert Image in between
+st.image("img.png", caption="The mysterious man in the suit", use_container_width=True)
+
+# Blog Content Part 2
+st.markdown("""
+**“There’s a kill order on the person meant to be sitting here,”** he said.  
+**“You're in danger.”**
+
+A chill shot down my spine.  
+**“Why me?”**
+
+He didn’t answer. He just scanned the carriage like he was expecting something. Or someone.
+
+Then the intercom crackled: *“Next stop, midnight.”*
+
+I frowned. **“Trains don’t stop at midnight.”**
+
+When I turned back, the man was gone. Just… gone.
+
+The windows showed only black. No trees. No lights. Nothing.
+
+That’s when I heard the whisper behind me:  
+**“You shouldn’t be here.”**
+
+I turned slowly.
+
+A woman stood there, wearing red.  
+Her face—**my face**—was an exact mirror of mine.
+
+**“I’m the real passenger,”** she said with a smile.  
+**“And this train… this is where they erase mistakes.”**
+
+The lights went out.
+
+**Total darkness.** I couldn’t move. I couldn’t scream.
+
+When the lights came back on, I was sitting again.
+
+**Alone.**
+
+The train still moving.
+
+And in the window, **my reflection was smiling.**
+
+But I wasn’t.
+""")
+s
