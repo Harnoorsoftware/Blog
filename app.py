@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 # Page configuration
 st.set_page_config(page_title="Harnoor's Blog")
@@ -31,9 +32,12 @@ My throat went dry.
 He opened his coat and flashed a badge. *Interpol*.
 """)
 
+# --- Robust image path handling ---
 img_path = os.path.join(os.path.dirname(__file__), "img.png")
-st.image(img_path, caption="The mysterious man in the suit", use_container_width=True)
-
+if os.path.exists(img_path):
+    st.image(img_path, caption="The mysterious man in the suit", use_container_width=True)
+else:
+    st.warning("Image 'img.png' not found in the app directory.")
 
 # Blog Content Part 2
 st.markdown("""
