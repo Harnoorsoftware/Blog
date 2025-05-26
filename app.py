@@ -77,4 +77,3 @@ And in the window, **my reflection was smiling.**
 
 But I wasn’t.
 """)
-s
