@@ -31,8 +31,9 @@ My throat went dry.
 He opened his coat and flashed a badge. *Interpol*.
 """)
 
-# Insert Image in between
-st.image("img.png", caption="The mysterious man in the suit", use_container_width=True)
+img_path = os.path.join(os.path.dirname(__file__), "img.png")
+st.image(img_path, caption="The mysterious man in the suit", use_container_width=True)
+
 
 # Blog Content Part 2
 st.markdown("""
