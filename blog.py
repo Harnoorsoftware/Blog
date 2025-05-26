@@ -1,10 +1,33 @@
 import streamlit as st
 
 # Set the page title
-st.set_page_config(page_title="My Image App")
+st.set_page_config(page_title="Harnoor's Blog")
 
-# Show the image (make sure img.png is in the same folder)
-st.image("img.png", caption="My Image", use_column_width=True)
+# Start of the blog
+st.markdown("""
+# Hi! I am Harnoor.
+## Welcome to my *First Blog.*
+### The Last Passenger
 
-# Optional text
-st.markdown("### Welcome to my simple Streamlit app!")
+The train to Munich cut through the storm like a blade, the windows rattling with every gust. I wrapped my coat tighter, glancing around the nearly empty carriage.
+""")
+
+# Image in between
+st.image("img.png", caption="The man in the dark suit", use_column_width=True)
+
+# Continue the blog
+st.markdown("""
+Only one other passenger sat at the far end—a man in a dark suit, briefcase in hand, eyes locked on me.
+
+I wasn’t supposed to be on this train. My original had been canceled, and this one, they said, was a “special service.” No stops. No questions. Something about the way the conductor said it made my skin crawl.
+
+The man stood. Slowly. Calmly. His gaze never left mine as he walked toward me, step by deliberate step.
+
+> “You switched tickets,” he said. His voice was smooth, almost bored. “That seat wasn’t meant for you.”
+
+...
+
+And in the window, **my reflection was smiling.**
+
+But I wasn’t.
+""")
