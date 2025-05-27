@@ -4,7 +4,6 @@ import os
 # Page configuration
 st.set_page_config(page_title="Harnoor's Blog")
 
-# Title & Subtitle
 st.markdown("""
 # Hi! I am Harnoor.
 ## Welcome to my *First Blog.*
