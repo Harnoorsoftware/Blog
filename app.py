@@ -34,7 +34,7 @@ He opened his coat and flashed a badge. *Interpol*.
 # --- Robust image path handling ---
 img_path = os.path.join(os.path.dirname(__file__), "img.png")
 if os.path.exists(img_path):
-    st.image(img_path, caption="The mysterious man in the suit", use_container_width=True)
+    st.image(img_path, caption="The mysterious man in the suit", use_container_width=False)
 else:
     st.warning("Image 'img.png' not found in the app directory.")
 
